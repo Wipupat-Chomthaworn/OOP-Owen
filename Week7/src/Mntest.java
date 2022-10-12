@@ -1,16 +1,17 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
 /**
  *
- * @author LAB203_39
+ * @author LAB203_47
  */
+
 import java.awt.*;
 import javax.swing.*;
 
-public class MnGUI {
+public class Mntest {
 
     private JFrame fr;
     private JMenuBar mb;
@@ -19,7 +20,7 @@ public class MnGUI {
     private JDesktopPane desktopPane;
     private JInternalFrame frame1, frame2, frame3;
 
-    public MnGUI() {
+    public Mntest() {
         fr = new JFrame("SubMenuItem Demo");
 
         mb = new JMenuBar();
@@ -51,13 +52,10 @@ public class MnGUI {
         frame1 = new JInternalFrame("Application 01", true, true, true, true);
         frame2 = new JInternalFrame("Application 02", true, true, true, true);
         frame3 = new JInternalFrame("Application 03", true, true, true, true);
-//        frame1.pack();
-//        frame2.pack();
-//        frame3.pack();
+        frame1.pack();
+        frame2.pack();
+        frame3.pack();
 
-        frame1.setSize(300, 300);
-        frame2.setSize(300, 300);
-        frame3.setSize(300, 300);
         frame1.setVisible(true);
         frame2.setVisible(true);
         frame3.setVisible(true);
@@ -66,30 +64,26 @@ public class MnGUI {
         frame2.setLocation(100, 500);
         frame3.setLocation(900, 600);
 
+        frame1.setSize(300, 300);
+        frame2.setSize(300, 300);
+        frame3.setSize(300, 300);
+
         desktopPane.add(frame1);
         desktopPane.add(frame2);
         desktopPane.add(frame3);
 
         fr.add(desktopPane);
 
-        //fr.pack();
+        fr.pack();
         fr.setSize(1500, 1000);
 //        fr.getContentPane().setBackground(Color.black);
-        desktopPane.setBackground(Color.BLACK);
         fr.setDefaultCloseOperation(fr.EXIT_ON_CLOSE);
         fr.setVisible(true);
     }
 
     public static void main(String[] args) {
-//        MnGUI f = new MnGUI();
-        try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        SwingUtilities.invokeLater(() -> {
-            MnGUI frame = new MnGUI();
-        });
+        Mntest f = new Mntest();
     }
-
 }
+
+

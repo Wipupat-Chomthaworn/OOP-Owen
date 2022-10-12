@@ -8,11 +8,13 @@
  * @author LAB203_39
  */
 public class Main {
+
     public static void main(String[] args) {
 //        new CalculatorSample();
-        //to run calculator
+//        //to run calculator
 //        new TellerGUI();
-new SimpleCalGUI();
+//        new SimpleCalGUI();
+//        new MnGUI();
 
     }
 }
